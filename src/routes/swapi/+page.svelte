@@ -2,13 +2,22 @@
 	import getData from '$lib/hooks/get-data';
 	import { writable } from 'svelte/store';
 	import type { PlanetResponse } from '../../types/planets.types';
+	import { useSnackbar } from '$lib/useSnackBar';
 
 	let currentPage = writable('https://swapi.dev/api/planets/');
 
 	const { data, error, loading } = getData<PlanetResponse>(currentPage);
+
+	const showSnackbar = useSnackbar();
 </script>
 
 <h1>Liste Planets</h1>
+
+<button
+	onclick={() => {
+		showSnackbar('Hello from swapi');
+	}}>coucou</button
+>
 
 {#if $error}
 	<p>{$error}</p>
