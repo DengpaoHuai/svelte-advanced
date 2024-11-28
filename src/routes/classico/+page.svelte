@@ -1,0 +1,23 @@
+<script lang="ts">
+	const handleSubmit = (e: SubmitEvent) => {
+		e.preventDefault();
+		const formData = new FormData(e.target as HTMLFormElement);
+
+		const data = Object.fromEntries(formData.entries());
+
+		console.log(data);
+	};
+</script>
+
+<form onsubmit={handleSubmit}>
+	<label for="name">Name:</label>
+	<input type="text" id="name" name="name" required /><br /><br />
+
+	<label for="email">Email:</label>
+	<input type="email" id="email" name="email" required /><br /><br />
+
+	<label for="message">Message:</label>
+	<textarea id="message" name="message" required></textarea><br /><br />
+
+	<button type="submit">Submit</button>
+</form>
