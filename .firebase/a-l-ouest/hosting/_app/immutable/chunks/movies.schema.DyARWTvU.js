@@ -1,0 +1,1 @@
+import{z as r}from"./zod.Cmzw_u6b.js";const e=r.object({title:r.string().min(2,"trop court"),director:r.string(),producer:r.string(),release_date:r.string().regex(/^\d{4}-\d{2}-\d{2}$/)});r.object({title:r.string().min(5,"trop court 5"),director:r.string(),producer:r.string(),release_date:r.string().regex(/^\d{4}-\d{2}-\d{2}$/)});export{e as m};

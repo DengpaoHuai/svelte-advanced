@@ -27,14 +27,19 @@
 		"@storybook/svelte": "^8.4.5",
 		"@storybook/sveltekit": "^8.4.5",
 		"@storybook/test": "^8.4.5",
+		"@stryker-mutator/core": "^8.6.0",
+		"@stryker-mutator/vitest-runner": "^8.6.0",
 		"@sveltejs/adapter-auto": "^3.0.0",
 		"@sveltejs/kit": "^2.0.0",
 		"@sveltejs/vite-plugin-svelte": "^4.0.0",
 		"@testing-library/svelte": "5.2.6",
+		"@vitest/coverage-v8": "2.1.6",
+		"@vitest/ui": "2.1.6",
 		"autoprefixer": "^10.4.20",
 		"bits-ui": "1.0.0-next.64",
 		"clsx": "^2.1.1",
 		"cmdk-sv": "^0.0.18",
+		"cypress": "^13.16.0",
 		"embla-carousel-svelte": "^8.5.1",
 		"eslint": "^9.7.0",
 		"eslint-config-prettier": "^9.1.0",
@@ -65,10 +70,12 @@
 		"zod": "^3.23.8"
 	},
 	"dependencies": {
+		"@sveltejs/adapter-static": "^3.0.6",
 		"@tailwindcss/container-queries": "^0.1.1",
 		"@tailwindcss/forms": "^0.5.9",
 		"@tailwindcss/typography": "^0.5.15",
 		"@tanstack/svelte-query": "^5.61.5",
-		"axios": "^1.7.8"
+		"axios": "^1.7.8",
+		"firebase": "^11.0.2"
 	}
 }

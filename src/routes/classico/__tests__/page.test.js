@@ -17,7 +17,6 @@ describe('FormComponent', () => {
 		const { getByTestId, getByLabelText, getByRole } = render(FormComponent);
 
 		const form = getByTestId('form');
-		const submitButton = getByRole('button', { name: /submit/i });
 
 		await fireEvent.submit(form);
 
