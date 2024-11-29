@@ -14,4 +14,6 @@ export const movieSchema1 = z.object({
 	release_date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/)
 });
 
-export type Movie = z.infer<typeof movieSchema>;
+export type Movie = z.infer<typeof movieSchema> & { _id: string };
+
+export type MovieForm = Omit<Movie, '_id'>;

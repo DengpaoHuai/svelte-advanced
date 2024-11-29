@@ -1,7 +1,5 @@
 // See https://svelte.dev/docs/kit/types#app.d.ts
 
-import type { HTMLAttributes, HTMLButtonAttributes, SvelteHTMLElements } from 'svelte/elements';
-
 // for information about these interfaces
 declare global {
 	namespace App {
@@ -14,11 +12,3 @@ declare global {
 }
 
 export {};
-
-declare global {
-	namespace svelteHTML {
-		interface IntrinsicElements {
-			'demo-tooltip': HTMLButtonAttributes<HTMLButtonElement>;
-		}
-	}
-}

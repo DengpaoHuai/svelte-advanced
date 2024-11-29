@@ -11,7 +11,7 @@ export const getMovie = async (id: string) => {
 	return response.data;
 };
 
-export const createMovie = async (movie: Movie) => {
+export const createMovie = async (movie: Omit<Movie, '_id'>) => {
 	const response = await httpClient.post('/movies', movie);
 	return response.data;
 };
