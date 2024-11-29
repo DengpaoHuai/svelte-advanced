@@ -1,5 +1,4 @@
 import { writable, type Writable } from 'svelte/store';
-import { onMount } from 'svelte';
 
 const getData = <T>(url: Writable<string>) => {
 	const data = writable<T | null>(null);

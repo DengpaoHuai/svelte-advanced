@@ -14,6 +14,9 @@
 	];
 </script>
 
+<button on:click={() => {}}>dfgdfhgd</button>
+<demo1-tooltip on:fdg={() => {}}> dfgdfg </demo1-tooltip>
+
 <DataTable {rows} {columns}>
 	{#snippet cellHead(column)}
 		{column.label}

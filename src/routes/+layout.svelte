@@ -4,6 +4,7 @@
 	let { children } = $props();
 </script>
 
+<h1></h1>
 <SnackbarProvider>
 	{@render children()}
 </SnackbarProvider>

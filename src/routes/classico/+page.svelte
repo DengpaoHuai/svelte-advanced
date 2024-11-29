@@ -9,7 +9,7 @@
 	};
 </script>
 
-<form onsubmit={handleSubmit}>
+<form data-testid="form" onsubmit={handleSubmit}>
 	<label for="name">Name:</label>
 	<input type="text" id="name" name="name" required /><br /><br />
 
